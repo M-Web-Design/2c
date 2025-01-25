@@ -800,3 +800,48 @@ button:not(:disabled),
     margin-bottom: 24px;
   }
 }
+
+.button {
+  display: inline-flex;
+  margin-top: 40px;
+  background-color: #299b3e;
+  text-align: center;
+  line-height: 1;
+  color: #fff;
+  padding: 12px 32px;
+  font-size: 20px;
+  border-radius: 100px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #1b722b;
+}
+
+.fa-line {
+  font-size: 32px;
+  padding-right: 8px;
+  vertical-align: middle;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0; /* 上下間距 */
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1; /* 讓線條自動延伸 */
+  border-bottom: 1px solid #ccc; /* 分隔線樣式 */
+  margin: 0 10px; /* 線條與文字的間距 */
+}
+
+.divider span {
+  font-size: 16px; /* 字體大小 */
+  color: #555; /* 文字顏色 */
+  white-space: nowrap; /* 防止文字換行 */
+}
